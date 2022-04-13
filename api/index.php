@@ -130,18 +130,16 @@ body{
 
 </div>
 <button class="recharge" style="background-color: <?= $color?>;">RECHARGER</button>
-<script>document.querySelector('.recharge').addEventListener('click',()=>{location.reload()})
-    window.addEventListener('load',()=>{
+<script>
         if(window.screen.orientation.type == 'portrait-primary' || window.screen.orientation.type == 'portrait-secondary'){
         document.querySelector('html').style.fontSize = window.innerWidth/70 + 'px'
     }
-})
         window.addEventListener('resize',()=>{
         if(window.screen.orientation.type == 'portrait-primary' || window.screen.orientation.type == 'portrait-secondary'){
         document.querySelector('html').style.fontSize = window.innerWidth/70 + 'px'
     }
 })
-    
+    document.querySelector('.recharge').addEventListener('click',()=>{location.reload()})
     </script>
 </body>
 </html>
