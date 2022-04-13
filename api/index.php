@@ -12,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+html{
     font-size: 10px;
 }
 body{
@@ -129,6 +129,11 @@ body{
 
 </div>
 <button class="recharge" style="background-color: <?= $color?>;">RECHARGER</button>
-<script>document.querySelector('.recharge').addEventListener('click',()=>{location.reload()})</script>
+<script>document.querySelector('.recharge').addEventListener('click',()=>{location.reload()})
+    window.addEventListener('resize',()=>{
+    document.querySelector('html').style.fontSize = window.innerWidth/100 + 'px'
+})
+    
+    </script>
 </body>
 </html>
