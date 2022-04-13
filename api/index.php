@@ -6,7 +6,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://github.com/M-FRD/user/blob/main/api/style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    background: #222;
+    height: 100vh
+}
+.card{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60rem;
+    background: #333;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 45rem;
+}
+.color-top{
+    height: 20%;
+    width: 100%;
+}
+.head{
+    background: #333;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    border-radius: 100%;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-image{
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+
+}
+.informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: sans-serif;
+    width: 80%;
+    height: 60%;
+}
+.informations p{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.recharge{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #222;
+    font-weight: bold;
+    width: 15rem;
+    height: 5rem;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+
+
+}
+    </style>
     <title>Générateur aléatoire</title>
 </head>
 <body>
