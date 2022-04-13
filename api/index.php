@@ -132,10 +132,14 @@ body{
 <button class="recharge" style="background-color: <?= $color?>;">RECHARGER</button>
 <script>document.querySelector('.recharge').addEventListener('click',()=>{location.reload()})
     window.addEventListener('load',()=>{
-    document.querySelector('html').style.fontSize = window.innerWidth/70 + 'px'
+        if(window.screen.orientation.type == 'portrait-primary' || window.screen.orientation.type == 'portrait-secondary'){
+        document.querySelector('html').style.fontSize = window.innerWidth/70 + 'px'
+    }
 })
         window.addEventListener('resize',()=>{
-    document.querySelector('html').style.fontSize = window.innerWidth/70 + 'px'
+        if(window.screen.orientation.type == 'portrait-primary' || window.screen.orientation.type == 'portrait-secondary'){
+        document.querySelector('html').style.fontSize = window.innerWidth/70 + 'px'
+    }
 })
     
     </script>
