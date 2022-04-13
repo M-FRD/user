@@ -2,7 +2,7 @@
 $colors = ['#f2c5d2',"#e5bb57","#9c96cd","#76b995", "#70a7c5","#f8e6d1","#dfbcab","#f1e7e1", "#efedf6", "#e1dce9","#cdcad5","#f2f2f2"];
 $color = $colors[round(rand(0,11))];
 $curl = curl_init('https://randomuser.me/api/?nat=fr');
-curl_setopt($curl,CURLOPT_CAINFO,'__DIR__ . DIRECTORY_SEPARATOR . /cert.cer');
+curl_setopt($curl,CURLOPT_CAINFO,__DIR__ . DIRECTORY_SEPARATOR . 'cert.cer');
 curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
 $data = curl_exec($curl);
 $data = json_decode($data,true);
