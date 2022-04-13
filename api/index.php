@@ -70,7 +70,7 @@ body{
     margin-left: 1rem;
 }
 .recharge{
-    font-size:1rem;
+    font-size:1.4rem;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -132,10 +132,10 @@ body{
 <button class="recharge" style="background-color: <?= $color?>;">RECHARGER</button>
 <script>document.querySelector('.recharge').addEventListener('click',()=>{location.reload()})
     window.addEventListener('load',()=>{
-    document.querySelector('html').style.fontSize = window.innerWidth/100 + 'px'
+    document.querySelector('html').style.fontSize = window.innerWidth/70 + 'px'
 })
         window.addEventListener('resize',()=>{
-    document.querySelector('html').style.fontSize = window.innerWidth/100 + 'px'
+    document.querySelector('html').style.fontSize = window.innerWidth/70 + 'px'
 })
     
     </script>
