@@ -131,7 +131,10 @@ body{
 </div>
 <button class="recharge" style="background-color: <?= $color?>;">RECHARGER</button>
 <script>document.querySelector('.recharge').addEventListener('click',()=>{location.reload()})
-    window.addEventListener('resize',()=>{
+    window.addEventListener('load',()=>{
+    document.querySelector('html').style.fontSize = window.innerWidth/100 + 'px'
+})
+        window.addEventListener('resize',()=>{
     document.querySelector('html').style.fontSize = window.innerWidth/100 + 'px'
 })
     
