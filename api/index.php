@@ -70,6 +70,7 @@ body{
     margin-left: 1rem;
 }
 .recharge{
+    font-size:1rem;
     position: absolute;
     top: 80%;
     left: 50%;
